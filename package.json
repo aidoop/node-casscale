@@ -1,0 +1,32 @@
+{
+  "name": "@things-factory/node-casscale",
+  "version": "0.0.2",
+  "description": "CAS Sacle client module",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "npx mocha -r ts-node/register ./test/**/*spec.ts",
+    "clean": "rm -rf build",
+    "build": "npm run clean && npx tsc",
+    "build:clean": "rm yarn.lock || yarn clean && yarn install && yarn build"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "await-lock": "^2.1.0",
+    "promise-socket": "^7.0.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.5",
+    "@types/should": "^13.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "prettier": "^2.0.5",
+    "reflect-metadata": "^0.1.13",
+    "should": "^13.2.3",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  }
+}
