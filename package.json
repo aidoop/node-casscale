@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/node-casscale",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "CAS Sacle client module",
   "main": "build/index.js",
   "scripts": {
